@@ -238,3 +238,37 @@ p, h1, h2, h3, h4, h5, h6 {
 hr {
     margin: 20px 0px;
 }
+
+/* Main content > Trending section layout*/
+.main-content .trending .content {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px #ced1d7;
+    background-color: #ffffff;
+    margin-top: 10px;
+    display: grid;
+    gap: 20px;
+}
+
+.trending .profile-img {
+    width: 40px;
+    height: 40px;
+}
+
+.trending .profile {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-items: start;
+    align-items: center;
+    gap: 12px;
+}
+
+.trending .profile {
+    font-size: 12px;
+    color: #5c5a5a;
+}
+
+.trending span {
+    color: #464444;
+    font-weight: bold;
+}
