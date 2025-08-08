@@ -31,6 +31,10 @@ p, h1, h2, h3, h4, h5, h6 {
     border-radius: 50%;
 }
 
+.icon {
+    width: 20px;
+    height: 20px;
+}
 /* full page layout */
 .container {
     display: grid;
@@ -50,7 +54,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .sidebar .logo {
     display: grid;
-    grid-template-columns: 40px  1fr;
+    grid-template-columns: 60px  1fr;
     grid-template-rows: 50px;
     gap: 10px;
     align-items: center;
@@ -60,8 +64,10 @@ p, h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
 }
 
-.sidebar .logo span {
+.sidebar .logo img {
     justify-self: end;
+    width: 40px;
+    height: 40px;
 }
 
 .sidebar ul {
@@ -78,10 +84,14 @@ p, h1, h2, h3, h4, h5, h6 {
 .sidebar ul a{
     color: #ffffff;
     text-decoration: none;
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    gap: 20px;
 }
 
-.sidebar a span {
+.sidebar a img {
     margin-right: 10px;
+    align-self: center;
 }
 
 /* Header layout */
@@ -102,7 +112,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .header .search-bar {
-    grid-template-columns: 30px 1fr;    
+    grid-template-columns: 30px 1fr;
+    align-items: center;    
 }
 
 .header input {
@@ -113,16 +124,22 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .header .user-info {
-    grid-template-columns: 20px 50px 100px;
+    grid-template-columns: 20px 50px max-content;
     align-items: center;
     width: min-content;
     justify-self: center;
-    gap: 10px;
+    gap: 15px;
+    justify-items: center;
 }
 
 .user-info img {
     width: 40px;
     height: 40px;
+}
+
+.user-info img.icon {
+    width: 20px;
+    height: 20px;
 }
 
 .user-info {
@@ -194,7 +211,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .main-content .project {
-    padding: 30px ;
+    padding: 20px ;
     border-left: 8px solid #eeb62c;
     border-radius: 10px;
     box-shadow: 2px 4px 4px #ced1d7;
@@ -208,12 +225,13 @@ p, h1, h2, h3, h4, h5, h6 {
 .main-content .project ul {
     list-style-type: none;
     margin-top: 20px;
-    width: min-content;
     margin-left: auto;
+    width: min-content;
     display: grid;
     grid-template-columns: 20px 20px 20px;
     justify-items: end;
     gap: 15px;
+    margin-right: 10px;
 }
 
 .main-content .project a {
