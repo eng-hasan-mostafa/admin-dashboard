@@ -1,8 +1,26 @@
 /* General reset */
 
+@font-face {
+    font-family: 'roboto';
+    src: url('/fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('/fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
 /* Defaulting to the system font of a particular operating system */
 :root {
-    --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    --system-ui: 'roboto', system-ui, "Segoe UI", Helvetica, Arial, sans-serif,
      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
